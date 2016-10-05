@@ -20,7 +20,7 @@ class mymotor(Motor):
             try:
                 self.position = value
             except:
-                print "impossible to fix position, attempt",iter-1,"on 10."
+                print ("impossible to fix position, attempt",iter-1,"on 10.")
             time.sleep(0.05)
 
     def rotate_forever(self, speed=480, regulate='on', stop_command='brake'):
